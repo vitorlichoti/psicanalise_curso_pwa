@@ -11,7 +11,7 @@ export default function MyApplication() {
     return (
         <>
             <TopBar />
-            <Box display="flex" alignItems='center'flexDirection="column">
+            <Box display="flex" alignItems='center' flexDirection="column">
                 <TextoDeApresentacao />
                 <ImageInicial
                     src="https://academiaenlevo.com.br/wp-content/uploads/2021/04/cropped-Academia-Enlevo-Psicanalise-Clinica.png"
