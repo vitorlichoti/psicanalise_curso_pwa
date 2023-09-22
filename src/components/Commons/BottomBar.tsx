@@ -1,18 +1,20 @@
 import {Box, Flex, VStack, Spacer, Text} from "@chakra-ui/layout";
 import {BiCaretRightSquare, BiBarChartSquare, BiBookOpen, BiColumns} from "react-icons/bi";
+import {useRouter} from "next/navigation";
 
 function BottomBar() {
+    const router = useRouter()
     return (
         <Flex borderTopRadius="md" alignItems="center" h='60px' p='2' bg='purple.900' color='whiteAlpha.700' pos="fixed" w="100%" zIndex={2} bottom="0">
             <Box>
-                <VStack spacing={0.7}>
+                <VStack spacing={0.7} onClick={() => router.push('/home')}>
                     <BiColumns />
                     <Text fontSize="0.7rem">Seu Painel</Text>
                 </VStack>
             </Box>
             <Spacer />
             <Box>
-                <VStack spacing={0.7}>
+                <VStack spacing={0.7} onClick={() => router.push('/courses')}>
                     <BiCaretRightSquare />
                     <Text fontSize="0.7rem">Meus Cursos</Text>
                 </VStack>
