@@ -7,7 +7,7 @@ import {Center, Flex} from "@chakra-ui/react"
 
 function ImageInicial({src}:{src:string}) {
   return (
-    <Center w='90%' bg='#ffff' style={{borderRadius:"10px"}}>
+    <Center w='90%' bg='#ffff' style={{borderRadius:"10px"}} mt="10px">
       <Flex flexDirection='row' alignItems='center' justifyContent='space-around'>
 
         <Image
@@ -21,7 +21,7 @@ function ImageInicial({src}:{src:string}) {
         />
         <Flex flexDirection="column" w="60%" ml="5%">
           <h2 style={{
-            fontSize:"1.2rem",
+            fontSize:"1rem",
             fontWeight:"bold",
             color:"#3E3F5E"
             }}
