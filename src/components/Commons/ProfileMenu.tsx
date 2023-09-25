@@ -2,8 +2,10 @@ import {Menu, MenuButton, MenuDivider, MenuGroup, MenuItem, MenuList} from "@cha
 import {Circle, IconButton} from "@chakra-ui/react";
 import {BiLogOut} from "react-icons/bi";
 import {Flex, Text} from "@chakra-ui/layout";
+import {useRouter} from "next/navigation";
 
 function ProfileMenu() {
+    const router = useRouter()
     return (
         <Menu>
             <MenuButton>
@@ -11,7 +13,7 @@ function ProfileMenu() {
             </MenuButton>
             <MenuList bg='purple.500'>
                 <MenuGroup title='Perfil'>
-                    <MenuItem bg='purple.400'>Meu Perfil</MenuItem>
+                    <MenuItem bg='purple.400' onClick={() => router.push('/perfil')}>Meu Perfil</MenuItem>
                     <MenuItem bg='purple.400'>Editar perfil</MenuItem>
                 </MenuGroup>
                 <MenuDivider />
