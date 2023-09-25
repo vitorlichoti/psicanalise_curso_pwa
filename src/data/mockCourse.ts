@@ -11,7 +11,7 @@ export const courses = [
                     {
                         id: 1,
                         title: 'PODCAST - Sigmund Freud',
-                        url: '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1598753283&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/psicanaliticamente" title="Academia Enlevo" target="_blank" style="color: #cccccc; text-decoration: none;">Academia Enlevo</a> · <a href="https://soundcloud.com/psicanaliticamente/episodio-47-sigmund-freud" title="Episódio 47 - Sigmund Freud" target="_blank" style="color: #cccccc; text-decoration: none;">Episódio 47 - Sigmund Freud</a></div>',
+                        url: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1598753283&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
                         content: {}
                     },
                     {
@@ -47,7 +47,7 @@ export const courses = [
                     {
                         id: 3,
                         title: 'PODCAST - Freud e a Antropologia',
-                        url: '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1598754900&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/psicanaliticamente" title="Academia Enlevo" target="_blank" style="color: #cccccc; text-decoration: none;">Academia Enlevo</a> · <a href="https://soundcloud.com/psicanaliticamente/episodio-48-freud-e-a-antropologia" title="Episódio 48 - Freud E A Antropologia" target="_blank" style="color: #cccccc; text-decoration: none;">Episódio 48 - Freud E A Antropologia</a></div>',
+                        url: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1598754900&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
                         content: {}
                     },
                 ]
@@ -172,7 +172,7 @@ export const courses = [
         ],
     },
     {
-        id: 1,
+        id: 3,
         course_name: 'Especialização em Psicanálise Freudiana',
         image_url: 'https://academiaenlevo.com.br/wp-content/uploads/2019/09/curso-forma%C3%A7%C3%A3o-profissional-em-psican%C3%A1lise-cl%C3%ADnica-online-1-370x193.jpg',
         modules: [

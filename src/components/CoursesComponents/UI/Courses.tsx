@@ -1,6 +1,7 @@
-import { courses } from '../../../data/mockCourse';
+import { courses } from '@/data/mockCourse';
 import {Box, Flex, Text, VStack} from "@chakra-ui/layout";
 import {Button, Card, CardBody, Center, Heading, Image} from "@chakra-ui/react";
+import Link from "next/link";
 function Courses() {
     return (
         <>
@@ -19,7 +20,9 @@ function Courses() {
                                 <CardBody>
                                     <Image src={e.image_url} alt="imagem do freud" />
                                     <Heading color='purple.900' fontSize='1.3rem'>{e.course_name}</Heading>
-                                    <Button colorScheme='purple'>Iniciar o Curso</Button>
+                                    <Link href={`/courses/${e.id}`}>
+                                        <Button colorScheme='purple'>Iniciar o Curso</Button>
+                                    </Link>
                                 </CardBody>
                             </Card>
                         </Flex>
