@@ -22,7 +22,7 @@ function EveryCourses() {
                                 <CardBody w="100%">
                                     <Image src={e.image_url} alt="imagem do freud" w="100%"/>
                                     <Heading color='purple.900' fontSize='1rem'>{e.course_name}</Heading>
-                                    <Button colorScheme='purple' fontSize="1rem" w="100%" mt="2%">Ir para o curso</Button>
+                                    <Button colorScheme='purple' fontSize="1rem" mt="2%">Ir para o curso</Button>
                                 </CardBody>
                             </Card>
                         </Flex>

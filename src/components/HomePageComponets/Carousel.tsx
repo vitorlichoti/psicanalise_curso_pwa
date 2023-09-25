@@ -15,22 +15,22 @@ function Carousel() {
     }, []);
 
     return (
-        <Flex w="100%" justifyContent="center" maxWidth="100%" flexDirection="column">
-            <Center paddingTop='5%'>
-                <Text as='b' fontSize='1.2rem' color='purple.900'>Todos os cursos</Text>
-            </Center>
-            <motion.div ref={carousel} style={{ overflow: "hidden" }} whileTap={{ cursor: "grab" }}>
-                <motion.div
-                    drag="x"
-                    dragConstraints={{ right: 0, left: -width }}
-                    initial = {{ x: 100}}
-                    animate = {{ x: 0 }}
-                    transition={{ duration: 0.80}}
-                >
-                    <EveryCourses />
+        <>
+            <Text as='b' fontSize='1.2rem' color='purple.900' ml="5%">Todos os cursos</Text>
+            <Flex w="100%" justifyContent="center" maxWidth="100%" flexDirection="column">
+                <motion.div ref={carousel} style={{ overflow: "hidden" }} whileTap={{ cursor: "grab" }}>
+                    <motion.div
+                        drag="x"
+                        dragConstraints={{ right: 0, left: -width }}
+                        initial = {{ x: 100}}
+                        animate = {{ x: 0 }}
+                        transition={{ duration: 0.80}}
+                    >
+                        <EveryCourses />
+                    </motion.div>
                 </motion.div>
-            </motion.div>
-        </Flex>
+            </Flex>
+        </>
     );
 }
 
