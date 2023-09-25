@@ -23,6 +23,9 @@ function Carousel() {
                 <motion.div
                     drag="x"
                     dragConstraints={{ right: 0, left: -width }}
+                    initial = {{ x: 100}}
+                    animate = {{ x: 0 }}
+                    transition={{ duration: 0.80}}
                 >
                     <EveryCourses />
                 </motion.div>
