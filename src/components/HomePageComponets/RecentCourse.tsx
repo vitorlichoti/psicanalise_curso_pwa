@@ -1,4 +1,3 @@
-import { courses } from "@/data/mockCourse";
 import {Flex, VStack, Text} from "@chakra-ui/layout";
 import {Button, Card, CardBody, Heading, Image} from "@chakra-ui/react";
 function RecentCourse() {

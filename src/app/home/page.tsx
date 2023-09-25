@@ -7,6 +7,8 @@ import TopBar from "@/components/Commons/TopBar";
 import BottomBar from "@/components/Commons/BottomBar";
 import Carousel from "@/components/HomePageComponets/Carousel";
 import RecentCourse from "@/components/HomePageComponets/RecentCourse";
+import FavoriteCarousel from "@/components/HomePageComponets/FavoriteCarousel";
+
 import {NextUIProvider} from "@nextui-org/react";
 
 export default function MyApplication() {
@@ -20,6 +22,7 @@ export default function MyApplication() {
                 </Box>
                 <RecentCourse />
                 <Carousel />
+                <FavoriteCarousel />
                 <BottomBar />
             </NextUIProvider>
         </ChakraProvider>
