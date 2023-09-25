@@ -8,12 +8,12 @@ import {Center, Flex} from "@chakra-ui/react"
 function ImageInicial() {
   return (
     <Center w='90%' bg='#ffff' style={{borderRadius:"10px"}} mt="10%" mb="10%">
-      <Flex flexDirection='row' alignItems='center' justifyContent='space-around'>
+      <Flex flexDirection='row' alignItems='center' justifyContent='space-around' width="80%">
 
         <Image
           style={{
             width: '100%',
-            height: '100%'
+            height: '80%'
           }}
           src="https://academiaenlevo.com.br/wp-content/uploads/2021/04/cropped-Academia-Enlevo-Psicanalise-Clinica.png"
           alt="imagem inicial"
@@ -40,5 +40,3 @@ function ImageInicial() {
 }
 
 export default ImageInicial
-
-
