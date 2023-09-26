@@ -1,20 +1,20 @@
 'use client'
-import {courseType} from "@/types/courseType";
 import {courses} from "@/data/mockCourse";
-import {Box, Text, VStack} from "@chakra-ui/layout";
+import {Box, Flex, Text, VStack} from "@chakra-ui/layout";
 import {
     Accordion,
     AccordionButton,
     AccordionItem,
     AccordionPanel,
     Button,
-    ChakraProvider,
+    ChakraProvider, CircularProgress, CircularProgressLabel,
     Image
 } from "@chakra-ui/react";
 import {NextUIProvider} from "@nextui-org/react";
 import Link from "next/link";
 import BottomBar from "@/components/Commons/BottomBar";
 import {BiArrowBack} from "react-icons/bi";
+import {element} from "prop-types";
 
 interface coursePageProps {
     params: { id: string }
@@ -22,6 +22,11 @@ interface coursePageProps {
 
 function CourseModulesPage({params}: coursePageProps) {
     const course: any = courses.filter((e:any) => e.id === Number(params.id))
+
+    const handleProgress = (element:any) => {
+        const total = (((element.classes.filter((elm:any) => elm.done === true)).length) / element.classes.length * 100).toFixed(0)
+        return Number(total)
+    }
 
     return (
         <ChakraProvider>
@@ -54,7 +59,12 @@ function CourseModulesPage({params}: coursePageProps) {
                                             <AccordionItem marginBottom="5px">
                                                 <h2>
                                                     <AccordionButton>
-                                                        <Text fontWeight="bold">{`${f.id}º - ${f.module_name}`}</Text>
+                                                        <Flex justifyContent="space-between" alignItems="center" width="200%">
+                                                            <Text fontWeight="bold">{`${f.id}º - ${f.module_name}`}</Text>
+                                                            <CircularProgress value={handleProgress(f)} size="40px">
+                                                                <CircularProgressLabel>{handleProgress(f)}%</CircularProgressLabel>
+                                                            </CircularProgress>
+                                                        </Flex>
                                                     </AccordionButton>
                                                 </h2>
                                                 <AccordionPanel pb={4}>
