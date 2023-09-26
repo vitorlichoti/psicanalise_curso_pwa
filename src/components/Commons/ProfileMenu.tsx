@@ -14,7 +14,7 @@ function ProfileMenu() {
             <MenuList bg='purple.500'>
                 <MenuGroup title='Perfil'>
                     <MenuItem bg='purple.400' onClick={() => router.push('/perfil')}>Meu Perfil</MenuItem>
-                    <MenuItem bg='purple.400'>Editar perfil</MenuItem>
+                    <MenuItem bg='purple.400' onClick={() => router.push('/editarPerfil')}>Editar perfil</MenuItem>
                 </MenuGroup>
                 <MenuDivider />
                 <MenuGroup title='Ajuda'>
