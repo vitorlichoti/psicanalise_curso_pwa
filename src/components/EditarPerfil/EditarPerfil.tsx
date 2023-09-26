@@ -84,6 +84,7 @@ function EditarPerfil () {
                         placeholder="digite seu nome" 
                         w="100%"
                         h="100%"
+                        p="5%"
                         value={inputValueName}
                         onChange={(e) => setInputValueName(e.target.value)}
                     />
@@ -117,6 +118,7 @@ function EditarPerfil () {
                             placeholder="digite seu ultimo nome" 
                             w="100%"
                             h="100%"
+                            p="5%"
                             value={inputValueLastName}
                             onChange={(e) => setInputValueLastName(e.target.value)}
                         />
@@ -150,6 +152,7 @@ function EditarPerfil () {
                             placeholder="digite seu email" 
                             w="100%"
                             h="100%"
+                            p="5%"
                             value={inputValueEmail}
                             onChange={(e) => setInputValueEmail(e.target.value)}
                         />
