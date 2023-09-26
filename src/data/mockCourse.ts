@@ -11,12 +11,14 @@ export const courses = [
                     {
                         id: 1,
                         title: 'PODCAST - Sigmund Freud',
+                        done: true,
                         url: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1598753283&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
                         content: {}
                     },
                     {
                         id: 2,
                         title: 'Breve história da psicanálise e sua relevância na sociedade',
+                        done: false,
                         url: '',
                         content: {
                             title: 'Introdução à Psicanálise',
@@ -47,6 +49,7 @@ export const courses = [
                     {
                         id: 3,
                         title: 'PODCAST - Freud e a Antropologia',
+                        done: false,
                         url: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1598754900&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
                         content: {}
                     },
@@ -59,6 +62,7 @@ export const courses = [
                     {
                         id: 1,
                         title: 'Descrição detalhada da estrutura do aparelho psíquico segundo Freud: id, ego e superego',
+                        done: false,
                         url: '',
                         content: {
                             title: 'Estrutura do aparelho psíquico segundo a teoria de Freud: id, ego e superego.',
@@ -97,6 +101,7 @@ export const courses = [
                     {
                         id: 1,
                         title: 'PODCAST - Sigmund Freud',
+                        done: false,
                         url: '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1598753283&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/psicanaliticamente" title="Academia Enlevo" target="_blank" style="color: #cccccc; text-decoration: none;">Academia Enlevo</a> · <a href="https://soundcloud.com/psicanaliticamente/episodio-47-sigmund-freud" title="Episódio 47 - Sigmund Freud" target="_blank" style="color: #cccccc; text-decoration: none;">Episódio 47 - Sigmund Freud</a></div>',
                         content: {}
                     },
@@ -133,6 +138,7 @@ export const courses = [
                     {
                         id: 3,
                         title: 'PODCAST - Freud e a Antropologia',
+                        done: false,
                         url: '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1598754900&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/psicanaliticamente" title="Academia Enlevo" target="_blank" style="color: #cccccc; text-decoration: none;">Academia Enlevo</a> · <a href="https://soundcloud.com/psicanaliticamente/episodio-48-freud-e-a-antropologia" title="Episódio 48 - Freud E A Antropologia" target="_blank" style="color: #cccccc; text-decoration: none;">Episódio 48 - Freud E A Antropologia</a></div>',
                         content: {}
                     },
@@ -145,6 +151,7 @@ export const courses = [
                     {
                         id: 1,
                         title: 'Descrição detalhada da estrutura do aparelho psíquico segundo Freud: id, ego e superego',
+                        done: false,
                         url: '',
                         content: {
                             title: 'Estrutura do aparelho psíquico segundo a teoria de Freud: id, ego e superego.',
@@ -183,12 +190,14 @@ export const courses = [
                     {
                         id: 1,
                         title: 'PODCAST - Sigmund Freud',
+                        done: false,
                         url: '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1598753283&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/psicanaliticamente" title="Academia Enlevo" target="_blank" style="color: #cccccc; text-decoration: none;">Academia Enlevo</a> · <a href="https://soundcloud.com/psicanaliticamente/episodio-47-sigmund-freud" title="Episódio 47 - Sigmund Freud" target="_blank" style="color: #cccccc; text-decoration: none;">Episódio 47 - Sigmund Freud</a></div>',
                         content: {}
                     },
                     {
                         id: 2,
                         title: 'Breve história da psicanálise e sua relevância na sociedade',
+                        done: false,
                         url: '',
                         content: {
                             title: 'Introdução à Psicanálise',
@@ -219,6 +228,7 @@ export const courses = [
                     {
                         id: 3,
                         title: 'PODCAST - Freud e a Antropologia',
+                        done: false,
                         url: '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1598754900&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/psicanaliticamente" title="Academia Enlevo" target="_blank" style="color: #cccccc; text-decoration: none;">Academia Enlevo</a> · <a href="https://soundcloud.com/psicanaliticamente/episodio-48-freud-e-a-antropologia" title="Episódio 48 - Freud E A Antropologia" target="_blank" style="color: #cccccc; text-decoration: none;">Episódio 48 - Freud E A Antropologia</a></div>',
                         content: {}
                     },
@@ -231,6 +241,7 @@ export const courses = [
                     {
                         id: 1,
                         title: 'Descrição detalhada da estrutura do aparelho psíquico segundo Freud: id, ego e superego',
+                        done: false,
                         url: '',
                         content: {
                             title: 'Estrutura do aparelho psíquico segundo a teoria de Freud: id, ego e superego.',
