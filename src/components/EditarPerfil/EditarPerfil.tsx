@@ -14,7 +14,9 @@ function EditarPerfil () {
     const [showLastName, setShowLastName] = useState(false)
     const [showEmail, setShowEmail] = useState(false)
 
-    const [inputValue, setInputValue] = useState('');
+    const [inputValueName, setInputValueName] = useState('');
+    const [inputValueLastName, setInputValueLastName] = useState('');
+    const [inputValueEmail, setInputValueEmail] = useState('');
 
     const handleEditName = () => {
         setShowName(true)
@@ -29,20 +31,20 @@ function EditarPerfil () {
     }
 
     const handleClickName = () => {
-        console.log('Valor digitado:', inputValue);
-         setInputValue('')
+        console.log('Valor digitado:', inputValueName);
+         setInputValueName('')
         setShowName(false)
     }
 
     const handleClickLastName = () => {
-        console.log('Valor digitado:', inputValue);
-        setInputValue('')
+        console.log('Valor digitado:', inputValueLastName);
+        setInputValueLastName('')
         setShowLastName(false)
     }
 
     const handleClickEmail = () => {
-        console.log('Valor digitado:', inputValue);
-         setInputValue('')
+        console.log('Valor digitado:', inputValueEmail);
+         setInputValueEmail('')
         setShowEmail(false)
     }
 
@@ -82,8 +84,9 @@ function EditarPerfil () {
                         placeholder="digite seu nome" 
                         w="100%"
                         h="100%"
-                        value={inputValue}
-                        onChange={(e) => setInputValue(e.target.value)}
+                        p="5%"
+                        value={inputValueName}
+                        onChange={(e) => setInputValueName(e.target.value)}
                     />
                     <Button 
                         colorScheme='purple' 
@@ -115,8 +118,9 @@ function EditarPerfil () {
                             placeholder="digite seu ultimo nome" 
                             w="100%"
                             h="100%"
-                            value={inputValue}
-                            onChange={(e) => setInputValue(e.target.value)}
+                            p="5%"
+                            value={inputValueLastName}
+                            onChange={(e) => setInputValueLastName(e.target.value)}
                         />
                         <Button 
                             colorScheme='purple' 
@@ -148,8 +152,9 @@ function EditarPerfil () {
                             placeholder="digite seu email" 
                             w="100%"
                             h="100%"
-                            value={inputValue}
-                            onChange={(e) => setInputValue(e.target.value)}
+                            p="5%"
+                            value={inputValueEmail}
+                            onChange={(e) => setInputValueEmail(e.target.value)}
                         />
                         <Button 
                             colorScheme='purple' 
