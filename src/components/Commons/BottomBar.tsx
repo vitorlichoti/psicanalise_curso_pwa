@@ -34,7 +34,7 @@ function BottomBar() {
             </Box>
             <Spacer />
             <Box>
-                <VStack spacing={0.7}>
+                <VStack spacing={0.7} onClick={() => router.push('/articles')}>
                     <Flex direction="column" alignItems="center">
                         <BiBookOpen />
                         <Text fontSize="0.7rem">Leia Artigos</Text>
