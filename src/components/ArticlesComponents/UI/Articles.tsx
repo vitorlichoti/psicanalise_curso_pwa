@@ -1,5 +1,5 @@
 import { articles } from "@/data/mockArticles";
-import {Box, Flex, Text, VStack, Center} from "@chakra-ui/layout";
+import { Flex, Text, VStack, Center} from "@chakra-ui/layout";
 import { Card, CardBody, Button, Image, Heading, Link } from '@chakra-ui/react'
 
 function Articles() {
