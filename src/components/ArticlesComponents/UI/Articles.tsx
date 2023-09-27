@@ -1,4 +1,4 @@
-import { articles } from "@/data/mackArticles";
+import { articles } from "@/data/mockArticles";
 import {Box, Flex, Text, VStack, Center} from "@chakra-ui/layout";
 import { Card, CardBody, Button, Image, Heading, Link } from '@chakra-ui/react'
 
@@ -18,7 +18,7 @@ function Articles() {
                         >
                             <Card w='90%'>
                                 <CardBody>
-                                    <Image src={e.image_url} alt="imagem do freud" />
+                                    <Image src={e.image_url} alt="imagem dos artigos" />
                                     <Heading color='purple.900' fontSize='1.3rem'>{e.article_title}</Heading>
                                     <Flex justifyContent="space-between">
                                         <Link href={`/courses/${e.id}`}>

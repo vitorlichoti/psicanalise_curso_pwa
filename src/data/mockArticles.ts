@@ -33,7 +33,7 @@ export const articles = [
     {
         id : 2,
         article_title: 'O impacto da pandemia de COVID 19 e do isolamento social na saúde mental',
-        image_url: "",
+        image_url: "https://academiaenlevo.com.br/wp-content/uploads/2019/09/curso-forma%C3%A7%C3%A3o-profissional-em-psican%C3%A1lise-cl%C3%ADnica-online-1-370x193.jpg",
         author: "ELIZANGELA GEÓRGIA DE ASSUMPÇÃO",
         profession:"Psicanalista Clínica",
         author_email:"elizgeorgia.assumpcao@gmail.com",
