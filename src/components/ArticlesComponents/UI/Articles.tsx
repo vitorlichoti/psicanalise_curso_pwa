@@ -21,7 +21,7 @@ function Articles() {
                                     <Image src={e.image_url} alt="imagem do freud" />
                                     <Heading color='purple.900' fontSize='1.3rem'>{e.article_title}</Heading>
                                     <Flex justifyContent="space-between">
-                                        <Link href={`/courses/${e.id}`}>
+                                        <Link href={`/articles/${e.id}`}>
                                             <Button colorScheme='purple'>Ler Artigo</Button>
                                         </Link>
                                     </Flex>
