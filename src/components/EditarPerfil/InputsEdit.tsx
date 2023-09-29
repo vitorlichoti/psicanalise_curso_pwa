@@ -6,7 +6,6 @@ function InputsEdit({placeholder}: {placeholder: string}) {
     const [inputValue, setInputValue] = useState('');
 
     const handleClick = () => {
-        console.log('Valor digitado:', inputValue);
     }
 
     return (

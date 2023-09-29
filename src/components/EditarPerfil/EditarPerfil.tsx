@@ -31,19 +31,16 @@ function EditarPerfil () {
     }
 
     const handleClickName = () => {
-        console.log('Valor digitado:', inputValueName);
          setInputValueName('')
         setShowName(false)
     }
 
     const handleClickLastName = () => {
-        console.log('Valor digitado:', inputValueLastName);
         setInputValueLastName('')
         setShowLastName(false)
     }
 
     const handleClickEmail = () => {
-        console.log('Valor digitado:', inputValueEmail);
          setInputValueEmail('')
         setShowEmail(false)
     }

@@ -10,7 +10,6 @@ function FavoriteCarousel() {
 
     useEffect(() => {
         if (carousel.current) {
-            console.log(carousel.current?.scrollWidth, carousel.current?.offsetWidth);
             setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth || 0);
         }
     }, []);
