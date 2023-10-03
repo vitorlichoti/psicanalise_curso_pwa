@@ -1,15 +1,25 @@
 import {Menu, MenuButton, MenuDivider, MenuGroup, MenuItem, MenuList} from "@chakra-ui/menu";
-import {Circle, IconButton} from "@chakra-ui/react";
+import {Avatar, Circle, IconButton} from "@chakra-ui/react";
 import {BiLogOut} from "react-icons/bi";
 import {Flex, Text} from "@chakra-ui/layout";
 import {useRouter} from "next/navigation";
 
-function ProfileMenu() {
+interface profileProps {
+    avatar: string
+}
+
+function ProfileMenu({avatar} : profileProps) {
     const router = useRouter()
+    const handleLogout = () => {
+        localStorage.clear()
+        if (!localStorage.getItem('data') && !localStorage.getItem('token')) {
+            router.push('/')
+        }
+    }
     return (
         <Menu>
             <MenuButton>
-                <Circle size="40px" bg="purple.500">P</Circle>
+                <Avatar src={avatar} size="sm"/>
             </MenuButton>
             <MenuList bg='purple.500'>
                 <MenuGroup title='Perfil'>
@@ -25,7 +35,7 @@ function ProfileMenu() {
                     <MenuDivider />
                     <Flex justifyContent="center" alignItems="center" gap={4}>
                         <Text>Sair</Text>
-                        <IconButton h="30px" aria-label="Sair" icon={BiLogOut()}/>
+                        <IconButton onClick={handleLogout} h="30px" aria-label="Sair" icon={BiLogOut()}/>
                     </Flex>
                 </MenuGroup>
             </MenuList>

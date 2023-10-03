@@ -13,6 +13,7 @@ export async function handleLoginAuth(username: string, password: string, setErr
             setError(!data.success)
             if (!data.success) setLoading(false)
             if (data.success) {
+                localStorage.setItem('token', JSON.stringify(data.data.jwt))
                 fetch("https://psicanalise.digital/wp-json/wp/v2/users/me",
                     {
                         method: "GET",
@@ -22,6 +23,7 @@ export async function handleLoginAuth(username: string, password: string, setErr
                     }
                 ).then((res) => res.json())
                     .then((dataRes) => {
+                        localStorage.setItem('data', JSON.stringify(dataRes))
                         setLoading(false)
                         router.push('/home')
                     })
