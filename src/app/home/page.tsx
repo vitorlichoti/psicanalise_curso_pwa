@@ -9,24 +9,30 @@ import Carousel from "@/components/HomePageComponets/Carousel";
 import RecentCourse from "@/components/HomePageComponets/RecentCourse";
 import FavoriteCarousel from "@/components/HomePageComponets/FavoriteCarousel";
 
-import {NextUIProvider, Skeleton} from "@nextui-org/react";
-import {useEffect, useState} from "react";
+import {NextUIProvider} from "@nextui-org/react";
+import {useEffect} from "react";
+import {useRouter} from "next/navigation";
 
 export default function MyApplication() {
+    const router = useRouter()
+    useEffect(() => {
+        if (!localStorage.getItem('token')) {
+            localStorage.clear()
+            router.push('/')
+        }
+    }, []);
     return (
         <ChakraProvider>
             <NextUIProvider>
-                <Skeleton>
-                    <TopBar />
-                    <Box display="flex" alignItems='center' flexDirection="column" mt={10}>
-                        <TextoDeApresentacao />
-                        <ImageInicial/>
-                    </Box>
-                    <RecentCourse />
-                    <Carousel />
-                    <FavoriteCarousel />
-                    <BottomBar />
-                </Skeleton>
+                <TopBar />
+                <Box display="flex" alignItems='center' flexDirection="column" mt={10}>
+                    <TextoDeApresentacao />
+                    <ImageInicial/>
+                </Box>
+                <RecentCourse />
+                <Carousel />
+                <FavoriteCarousel />
+                <BottomBar />
             </NextUIProvider>
         </ChakraProvider>
     )

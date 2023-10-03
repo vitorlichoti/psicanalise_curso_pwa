@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, {useEffect} from 'react'
 import {Button, Container, Input, InputGroup, InputRightElement, Spinner} from "@chakra-ui/react";
 import {Flex, Text} from "@chakra-ui/layout";
 import {Image} from "@nextui-org/react";
@@ -15,6 +15,10 @@ function LoginPage() {
     const [loading, setLoading] = React.useState(false)
     const handleClick = () => setShow(!show)
     const router = useRouter()
+
+    useEffect(() => {
+        if (localStorage.getItem('token')) router.push('/home')
+    }, []);
 
     return (
         <Flex direction='column' h='100vh' justifyContent='center' alignItems='center' gap='20px'>
