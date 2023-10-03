@@ -9,21 +9,24 @@ import Carousel from "@/components/HomePageComponets/Carousel";
 import RecentCourse from "@/components/HomePageComponets/RecentCourse";
 import FavoriteCarousel from "@/components/HomePageComponets/FavoriteCarousel";
 
-import {NextUIProvider} from "@nextui-org/react";
+import {NextUIProvider, Skeleton} from "@nextui-org/react";
+import {useEffect, useState} from "react";
 
 export default function MyApplication() {
     return (
         <ChakraProvider>
             <NextUIProvider>
-                <TopBar />
-                <Box display="flex" alignItems='center' flexDirection="column" mt={10}>
-                    <TextoDeApresentacao />
-                    <ImageInicial/>
-                </Box>
-                <RecentCourse />
-                <Carousel />
-                <FavoriteCarousel />
-                <BottomBar />
+                <Skeleton>
+                    <TopBar />
+                    <Box display="flex" alignItems='center' flexDirection="column" mt={10}>
+                        <TextoDeApresentacao />
+                        <ImageInicial/>
+                    </Box>
+                    <RecentCourse />
+                    <Carousel />
+                    <FavoriteCarousel />
+                    <BottomBar />
+                </Skeleton>
             </NextUIProvider>
         </ChakraProvider>
     )
