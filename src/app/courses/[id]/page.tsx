@@ -15,6 +15,7 @@ import Link from "next/link";
 import BottomBar from "@/components/Commons/BottomBar";
 import {BiArrowBack} from "react-icons/bi";
 import {element} from "prop-types";
+import {useEffect} from "react";
 
 interface coursePageProps {
     params: { id: string }
@@ -27,6 +28,10 @@ function CourseModulesPage({params}: coursePageProps) {
         const total = (((element.classes.filter((elm:any) => elm.done === true)).length) / element.classes.length * 100).toFixed(0)
         return Number(total)
     }
+
+    useEffect(() => {
+
+    }, []);
 
     return (
         <ChakraProvider>
