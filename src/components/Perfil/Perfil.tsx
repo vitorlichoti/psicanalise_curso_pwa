@@ -1,10 +1,24 @@
+import { useState, useEffect } from "react";
+import {useRouter} from "next/navigation";
+
 import {Flex, Text, Box} from "@chakra-ui/layout";
 import { Image } from '@chakra-ui/react'
 import { AiOutlineArrowLeft } from "react-icons/ai";
-import {useRouter} from "next/navigation";
+
+import {requestDataFromStorage} from "@/utils/requestDataFromStorage";
 
 function Perfil () {
     const router = useRouter()
+    const [data, setData] = useState({
+        name: '',
+        avatar: '',
+        slug: ''
+    })
+    useEffect(() => {
+        const dataReq: any = requestDataFromStorage('Perfil')
+        setData(dataReq)
+    }, []);
+
     return(
         <Flex flexDirection="column" alignItems="center" w="100%" mt="5%">
             <AiOutlineArrowLeft 
@@ -15,7 +29,7 @@ function Perfil () {
             <Image
                 borderRadius='full'
                 boxSize='150px'
-                src='https://bit.ly/dan-abramov'
+                src={data?.avatar['48']}
                 alt='Foto de perfil'
                 mt="10%"
             />
@@ -26,8 +40,8 @@ function Perfil () {
                     flexDirection="column" 
                     w="100%" style={{borderBottom:'1px solid gray'}}
                 >
-                    <Text as='b' color='gray.900'fontSize='.7rem'>Primeiro nome</Text>
-                    <Text as='b' color='purple.900'fontSize='.7rem' mb="5%">Nome do fulano</Text>
+                    <Text as='b' color='gray.900'fontSize='.7rem'>Nome do usuário</Text>
+                    <Text as='b' color='purple.900'fontSize='.7rem' mb="5%">{data?.name}</Text>
                 </Box>
                 <Box 
                     borderBottomRadius="1px solid black" 
@@ -36,18 +50,8 @@ function Perfil () {
                     w="100%" style={{borderBottom:'1px solid gray'}}
                     mt="10%"
                 >
-                    <Text as='b' color='gray.900'fontSize='.7rem'>Primeiro nome</Text>
-                    <Text as='b' color='purple.900'fontSize='.7rem' mb="5%">Nome do fulano</Text>
-                </Box>
-                <Box 
-                    borderBottomRadius="1px solid black" 
-                    display="flex" 
-                    flexDirection="column" 
-                    w="100%" style={{borderBottom:'1px solid gray'}}
-                    mt="10%"
-                >
-                    <Text as='b' color='gray.900'fontSize='.7rem'>Primeiro nome</Text>
-                    <Text as='b' color='purple.900'fontSize='.7rem' mb="5%">Nome do fulano</Text>
+                    <Text as='b' color='gray.900'fontSize='.7rem'>Email</Text>
+                    <Text as='b' color='purple.900'fontSize='.7rem' mb="5%">{`@${data?.slug}`}</Text>
                 </Box>
             </Box>
         </Flex>

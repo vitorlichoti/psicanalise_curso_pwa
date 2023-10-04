@@ -6,5 +6,11 @@ export const requestDataFromStorage = (component: string) => {
             avatar: JSON.parse(storage)?.avatar_urls,
             name: JSON.parse(storage)?.name
         }
+    } else if (component === 'Perfil') {
+        return {
+            avatar: JSON.parse(storage)?.avatar_urls,
+            name: JSON.parse(storage)?.name,
+            slug: JSON.parse(storage)?.slug
+        }
     }
 }
